@@ -2,11 +2,29 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+# Postgresql gem for database
 gem 'pg'
 
+#HAML for ease of markup
+gem 'haml'
+
+# Formtastic for form building
+gem 'formtastic'
+
+# Authentication (user sessions) with AuthLogic
+gem 'authlogic'
+
+# User abilities with cancan
+gem 'cancan'
+
+# Making css better with sass
+gem 'sass'
+
+# Making forms easier and nicer to build with formtastic
+gem 'formtastic'
+
+# Jammit for compiling and packaging the asset pipeline
+gem 'jammit' 
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,20 +40,15 @@ end
 
 gem 'jquery-rails'
 
-group :test do
+group :test, :development do
+  #RSpec testing framework
   gem 'rspec-rails'
+  #Shoulda for meta language testing fun
+  gem 'shoulda-matchers'
+  #Integration tests with capybara
+  gem 'capybara'
+  #For debugging in development and testing
+  gem 'debugger'
+  #Jasmine for testing javascript
+  gem 'jasmine-rails'
 end
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'

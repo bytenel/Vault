@@ -1,0 +1,359 @@
+
+@import "base";
+
+//////////////////////
+/// GENERAL MIXINS ///
+//////////////////////
+
+@mixin active-element($fontSize:14px){
+	@include background($white);
+	color: $grayDarker;
+	cursor: default;
+	font-size: $fontSize;
+	height: 16px;
+}
+
+@mixin inactive-element{
+	@include background($blueGradientLight);
+	color: $blueWhite;
+	height: 16px;
+}
+
+@mixin nav-font{
+	font-size:14px;
+	font-weight:bold;
+}
+
+@mixin triborder{
+	border-left: 1px solid $darkBorder;
+	border-top: 1px solid $darkBorder;
+	border-right: 1px solid $darkBorder;
+
+}
+
+@mixin container-rounded{
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+@mixin container-border{
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	border: 2px solid $grayDarkest;
+}
+
+@mixin header-box{
+	@include background($blueGradient);
+	border-color: $grayDarker;
+	color: $white;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	text-shadow: 1px 3px 3px #002142;	
+	border-bottom: 0px;
+}
+
+@mixin color-border($width:1px, $color:$grayDarker){
+	border: $width solid $color;
+}
+
+
+//////////////////////////////////
+/// GENERAL CLASSES | ELEMENTS ///
+//////////////////////////////////
+
+html, body {
+	background-color: $bodyBackground;
+	height: 100%;
+}
+
+#wrap {
+   min-height: 93%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -$footerHeight;
+}
+
+#push,
+footer {
+   height: $footerHeight;
+}
+
+footer {
+   background-color: #f5f5f5;
+}
+
+//.selector {
+//  @include box-shadow(#{0 2px 5px rgba(0,0,0,.25) inset, 0 -2px 5px rgba(0,0,0,.25) inset});
+//}
+
+.main-content{
+	@include container-border;
+	background-color: $white;
+	//padding: 8px;
+	//margin: -20px 0 0 30px;
+	h1, h2, h3, h4, h5{
+		text-align: center;
+	}
+	hr{
+		margin: 0 18px 18px;
+	}
+}
+
+.dark-column{
+	background-color: #EAEAEA;
+	height: 100%;
+	@include container-border;
+	@include container-rounded;
+	h3{
+		margin-top:0;
+	}
+}
+
+.row {
+  margin-left: 0px;
+}
+
+[class*="span"] {
+  float: left;
+  margin-left: 0px;
+  min-height: 1px;
+}
+
+.navGreeting {
+	font-weight: bold;
+	margin-top: 5px;
+	float: left;
+}
+
+.logo-right{
+	padding-right: 10px;
+	float: right;
+	border: none;
+}
+
+.clear{
+	clear: both;
+}
+
+.padded{
+	padding:10px;
+}
+
+.center{
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+////////////////////////////
+/// NAVBAR CUSTOMIZATION ///
+////////////////////////////
+
+.navbar{
+	margin: 20px 0 0 0;
+	.btn-primary {
+		width: 150px;
+		@include nav-font;
+		@include background($blueGradientLight);
+		&:active, &:hover{
+			@include active-element;
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+.navbar-inverse .navbar-inner {
+	ul{
+		border:none;
+	}
+	@include header-box;
+	border-bottom: 0px;
+	margin: 0 -2px;
+	padding: 0 5px;
+	border-color: $grayDarker;
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .nav {
+	@include nav-font;
+	margin-top: 10px;
+	li{
+		a {
+			@include triborder;
+			@include inactive-element;
+		}
+		a:hover {
+			@include active-element;
+			cursor: pointer;
+		}
+	}
+}
+
+.navbar-inverse .nav .active{
+	a{
+		@include active-element(16px);
+		&:active, &:hover, &:focus{
+			@include triborder;
+			@include active-element(16px);
+		}
+	}
+}
+
+
+////////////////
+/// SECTIONS ///
+////////////////
+
+.section{
+	.btn{
+		width: 80%;
+		font-weight:bold;
+		font-size: 12px;
+		text-align: left;
+	}
+
+	select{
+		width: 100%;
+	}
+	
+	.not-started{
+		@include color-border($borderButtonThickness,adjust-lightness(red, $borderButtonDarken));
+		color:adjust-lightness(red, -30%);
+	}
+
+	.started{
+		@include color-border($borderButtonThickness,adjust-lightness(orange, $borderButtonDarken));
+		color:adjust-lightness(orange, -30%);
+	}
+
+	.finished{
+		@include color-border($borderButtonThickness,adjust-lightness(green, $borderButtonDarken));
+		color:adjust-lightness(green, -15%);
+	}
+}
+
+////////////
+/// FORM ///
+////////////
+.form{
+	div{
+		padding: 5px 0;
+		div:nth-of-type(1){
+			font-weight:bold;
+			text-align: right;
+			padding-right: 5px;
+		}
+		div:nth-of-type(2){
+			text-align: left;
+		}
+	}
+	
+	input{
+		max-width: 150px;
+	}
+}
+
+//////////////////
+/// LOGIN PAGE ///
+//////////////////
+
+#login {
+
+	body {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	.container {
+		margin-top: 40px;
+		min-width: 315px;
+		max-width: 40%;
+		@include container-border;
+		@include container-rounded;
+		.header {
+			@include header-box;
+			padding: 1px;
+			text-align: center;
+		}
+
+		.content {
+			background-color: $white;
+			padding: 20px;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+			box-shadow: 0 1px 2px rgba(0,0,0,.15);
+		}
+	}
+
+	.login-form {
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	legend {
+		margin-right: -50px;
+		font-weight: bold;
+		color: #404040;
+	}
+
+	.login-button {
+		font-size: 21px;
+		height: 50px;
+		margin: 30px 0 0;
+		width: 220px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	footer {
+		text-align: center;
+		padding: 20px 0 0;
+	}
+
+	.subnote {
+		color: #666666;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+}
+
+
+//////////////////////////////////
+/// RESPONSIVE CSS ADJUSTMENTS ///
+//////////////////////////////////
+
+@media (max-width: 767px) {
+   footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+}
+
+
+/////////////////
+/// DASHBOARD ///
+/////////////////
+
+.btn-dash {
+	@include container-border;
+	height: 150px;
+	margin: 10px;
+	width: 150px;
+	div {
+		display: block;
+		font-size: 22px;
+		font-weight: bold;
+		margin-top: 42%;
+	}
+}

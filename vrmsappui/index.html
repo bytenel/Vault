@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vault RMS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Business website template using twitter Bootstrap">
+	<meta name="author" content="Ben Nelson and Lance Morgan">
+	<!-- Styles -->
+	<link href="css/styles.css" rel="stylesheet">
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="wrap">
+		<div class="container">
+			<div class="row">
+				<!--Nav bar content START-->
+				<div class="navbar navbar-inverse">
+					<div class="navbar-inner">
+						<div class="container">
+							<div class="row">
+								<div class="span12">
+									<img class="nav nav-tabs pull-right logo-right" style="float: right;"
+										src="images/osudlogo.gif" />
+									<span class="clear" />
+									<label class="navGreeting">
+										Officer Chris Memmott
+										(04321)</label><br />
+									<br />
+									<div class="clear"></div>
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="#">Create Report</a></li>
+										<li><a href="#">View Reports</a></li>
+										<li><a href="#">LEAP Portal</a></li>
+										<li><a href="#">Help</a></li>
+										<li><a href="login.html">Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Nav bar content END-->
+			</div>
+		</div>
+
+		<div class="container main-content">
+			<div class="row">
+				<div class="span12">
+					<h3>Property - Incident# 20222610-0065</h3>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3">
+					<div class="padded section">
+						<h4>Sections</h4>
+						<hr />
+						<div class="section-buttons">
+							<p><a class="btn finished" href="#">1 | Administrative</a></p>
+							<p><a class="btn started" href="#">2 | Involved Parties</a></p>
+							<p><a class="btn not-started" href="#">3 | Offense</a></p>
+							<p>
+								<a class="btn not-started active" href="#">4 | Property</a>
+							</p>
+							<p><a class="btn not-started" href="#">5 | Arrest</a></p>
+						</div>
+						<hr />
+						<p><a class="btn btn-primary" href="#">View Report</a></p>
+					</div>
+				</div>
+				<div class="span6 dark-column">
+					<div class="padded">
+						<h3>Property</h3>
+						<!--FORM-->
+						<div class="container-fluid form">
+							<div class="row-fluid">
+								<div class="span6">
+									Section Does Not Apply:
+								</div>
+								<div class="span6">
+									<input type="checkbox" />
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span6">
+									Property Type:
+								</div>
+								<div class="span6">
+									<input type="radio" name="ptype" />Structure<br />
+									<input type="radio" name="ptype" />Vehicle<br />
+									<input type="radio" name="ptype" />Personal<br />
+									<input type="radio" name="ptype" />Narcotic<br />
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span6">
+									NIBRS Seg Level:
+								</div>
+								<div class="span6">
+									<input type="text" />
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span6">
+									Date:
+								</div>
+								<div class="span6">
+									<input type="text" class="span2" data-date-format="mm/dd/yy">
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									<p class="center">
+										<a class="btn btn-primary" style="min-width: 150px;" href="#">Save</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--FORM END-->
+					</div>
+				</div>
+				<div class="span3">
+					<div class="padded section">
+						<h4>Current Properties</h4>
+						<hr />
+						<p>
+							<select>
+								<option>Property01</option>
+								<option>Property02</option>
+								<option>Property03WITHAREALLYLONGNAME</option>
+							</select>
+						</p>
+						<p>
+							<a class="btn" href="#">Delete Property</a><a class="btn"
+								href="#">Add Property</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<br />
+		</div>
+		<div id="push"></div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="pull-right">
+				<span class="subnote">Powered By </span>
+				<a href="http://www.vaultrms.com">
+					<img src="images/VaultRmsLogo.png" /></a>
+				&copy; 2013
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

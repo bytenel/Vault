@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vault</title>
+  <title>Vault RMS</title>
+  <meta name="author" content="Ben Nelson and Lance Morgan">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render :partial => "navbar" %>
+	<div class="container main-content">
+	<%= yield %>
+	</div>
 
-<%= yield %>
-
+	<%= render :partial => "footer" %>
 </body>
 </html>

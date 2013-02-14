@@ -23,9 +23,6 @@ gem 'sass'
 # Making forms easier and nicer to build with formtastic
 gem 'formtastic'
 
-# Jammit for compiling and packaging the asset pipeline
-gem 'jammit' 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -43,6 +40,8 @@ gem 'jquery-rails'
 group :test, :development do
   #RSpec testing framework
   gem 'rspec-rails'
+  #Code coverage for rspec
+  # gem 'simplecov'
   #Shoulda for meta language testing fun
   gem 'shoulda-matchers'
   #Integration tests with capybara

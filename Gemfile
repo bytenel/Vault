@@ -23,6 +23,9 @@ gem 'sass'
 # Making forms easier and nicer to build with formtastic
 gem 'formtastic'
 
+# Making authentication a breeze with devise
+gem 'devise'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

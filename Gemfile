@@ -43,6 +43,7 @@ gem 'jquery-rails'
 group :test, :development do
   #More informative errors through better_errors
   gem 'better_errors'
+  gem 'binding_of_caller'
   #RSpec testing framework
   gem 'rspec-rails'
   #Code coverage for rspec

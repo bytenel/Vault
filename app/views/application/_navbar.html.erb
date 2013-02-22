@@ -8,7 +8,12 @@
 								<%= image_tag('osudlogo.gif', :class=>"nav nav-tabs pull-right logo-right", :style => "float: right;") %>
 								<span class="clear" />
 								<label class="navGreeting">
-									Welcome, Guest.
+									Welcome,
+									<% if current_user %>
+										<%= current_user.name %>.
+									<% else %>
+									 Guest.
+									<% end %>
 								</label>
 								<br />
 								<br />
@@ -31,8 +36,13 @@
 										<%= link_to 'Help', application_help_path %>
 									</li>
 									<li>
-										<% #change with login functionality %>
-										<a href="login.html">Logout</a>
+										<% if current_user %>
+											<%= link_to 'Logout', destroy_user_session_path, 
+												:method=>:delete %>
+										<% else %>
+											<%= link_to 'Login', new_user_session_path, 
+											:method=> :post %>
+										<% end %>
 									</li>
 								</ul>
 							</div>

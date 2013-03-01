@@ -206,6 +206,7 @@ DEPENDENCIES
   haml
   jasmine-rails
   jquery-rails
+  mail
   pg
   rails (= 3.2.11)
   rspec-rails

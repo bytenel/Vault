@@ -1,0 +1,23 @@
+<p>
+	<h1> Contact Information </h1>
+	39W Fort Mason San Francisco, CA 94123
+
+	<h1>Phone number</h1>
+	801.706.1668
+</p>
+
+<%= form_tag url_for(:controller => 'application',
+					 :action => 'help_request') do %>
+<p>
+	<h2> Subject </h2>
+	<%= text_field_tag :subject %>
+</p>
+
+<p>
+	<h2> Text </h2>
+	<%= text_area_tag :text %>
+</p>
+
+<%= submit_tag "Send help request" %>
+
+<% end %>

@@ -1,10 +1,10 @@
 require 'development_mail_interceptor'
 ActionMailer::Base.smtp_settings = {
-  :address              => "smtp.gmail.com",
-  :port                 => 587,
-  :domain               => "vaultrms.com",
-  :user_name            => "admin",
-  :password             => "vault",
+  :address              => "smtp.bizmail.yahoo.com",
+  :port                 => 465,
+  :domain               => "www.vaultrms.com",
+  :user_name            => "admin@vaultrms.com",
+  :password             => "pass123",
   :authentication       => "plain",
   :enable_starttls_auto => true
 }

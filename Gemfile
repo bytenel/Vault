@@ -35,6 +35,11 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
+  # Trying to get compass mixins for sass to work
+  gem 'compass-rails'
+  # More gem problems with the new stylesheets
+  gem 'bootstrap-sass'
+
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 

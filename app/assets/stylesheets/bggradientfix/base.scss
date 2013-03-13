@@ -1,0 +1,89 @@
+﻿
+// NOTE: Ordering of items is important
+// See https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/README.md
+// for information on this SASS implementation of Twitter Bootstrap.
+
+///////////////////////////////////////////////////////////////////////////////
+/// VARIABLES																					 ///
+// Add any bootstrap variables below to override the defaults.					 ///
+// Complete list at http://twitter.github.com/bootstrap/less.html#variables ///
+///////////////////////////////////////////////////////////////////////////////
+
+// COLORS //
+$blue: #017DC3;
+$blueLight: adjust-lightness($blue, 30%);
+$blueWhite: adjust-lightness($blue, 80%);
+$blueDark: #004D9F;
+$white: #FFF;
+$grayLight: #CCCCCC;
+$grayDark: #999;
+$grayDarker: #666;
+$grayDarkest: #444;
+$darkBorder: $grayDarkest;
+
+// SIZES ETC //
+$footerHeight: 60px;
+
+// GRADIENTS //
+$blueGradient: linear-gradient($blue, $blueDark);
+$blueGradientLight: linear-gradient($blueLight 10%, $blueDark 74%, $blueLight 145%);
+
+// SCAFFOLDING //
+$bodyBackground: #EEE;
+
+// LINKS //
+$linkColor: #08c;
+$linkColorHover: darken($linkColor, 15%);
+
+// SPRITES //
+$iconSpritePath: "../img/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../img/glyphicons-halflings-white.png";
+
+// GRID SYSTEM //
+$gridColumns: 12;
+$gridColumnWidth: 60px;
+$gridGutterWidth: 20px;
+
+// TYPOGRAPHY //
+$baseFontSize: 13px;
+$baseFontFamily: "Tahoma, Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseLineHeight: 18px;
+$textColor: $grayDarkest;
+
+// TABLES //
+
+// FORMS | BUTTONS //
+$btnPrimaryBackground: $blue;
+$borderButtonThickness: 2px;
+$borderButtonDarken: -10%;
+
+// FORM STATES & ALERTS //
+
+// NAVBAR //
+$navbarHeight: 25px;
+$navbarBackground: $blueDark;
+$navbarBackgroundHighlight: $blue;
+$navbarText: #EEEEEE;
+$navbarLinkColor: $white;
+$navbarLinkColorHover: #DDDDDD;
+$navbarLinkColorActive: $white;
+$navbarLinkBackgroundHover: #049CDB;
+$navbarLinkBackgroundActive: #049CDB;
+
+// DROPDOWNS //
+
+
+
+///////////////
+/// IMPORTS ///
+///////////////
+
+//@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "blueprint/colors";
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+

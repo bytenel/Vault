@@ -31,4 +31,7 @@ class ApplicationController < ActionController::Base
   	render :help
   end 
 
+  def leap
+    render :leap
+  end
 end

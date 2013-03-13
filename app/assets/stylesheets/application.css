@@ -12,3 +12,16 @@
  *= require_tree .
  */
 @import url(http://fonts.googleapis.com/css?family=Junge|Titillium+Web);
+
+/*a:hover {color:none;}*/
+
+a img:hover {
+	 background-color: white;
+	 text-decoration: none;
+	 opacity:1.0;
+	 box-shadow:none;
+}
+#logo:hover{
+	background-color: white;
+	text-decoration: none;
+}

@@ -19,19 +19,19 @@
 								<br />
 								<div class="clear"></div>
 								<ul class="nav nav-tabs">
-									<li class="active">
+									<li class=<%= current_path?(root_url) %>>
 										<%= link_to 'Home', root_url %>
 									</li>
-									<li>
+									<li class=<%= current_path?(new_document_path)%>>
 										<%= link_to 'Create Report', new_document_path %>
 									</li>
-									<li>
+									<li class=<%= current_path?(documents_path)%>>
 										<%= link_to 'View Reports', documents_path %>
 									</li>
-									<li>
+									<li class=<%= current_path?(leap_path)%>>
 										<%= link_to 'LEAP Portal', leap_path %>
 									</li>
-									<li>
+									<li class=<%= current_path?(application_help_path)%>>
 										<%= link_to 'Help', application_help_path %>
 									</li>
 									<li>

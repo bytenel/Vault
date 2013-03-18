@@ -11,21 +11,7 @@
 					<div class="padded section">
 						<h4>Recent Items</h4>
 						<hr />
-						<p>
-							<a href="#">Incident Report 01242013-004</a>
-						</p>
-						<p>
-							<a href="#">Parking Citation 01212013-002</a>
-						</p>
-						<p>
-							<a href="#">Incident Report 01192013-011</a>
-						</p>
-						<p>
-							<a href="#">Incident Report 01192013-009</a>
-						</p>
-						<p>
-							<a href="#">Parking Citation 01182013-004</a>
-						</p>
+						<%= render :partial => 'recent_activity', :collection => @recent_activity, :as => :item %>
 						<hr />
 					</div>
 				</div>
@@ -46,9 +32,11 @@
 							</div>
 							<div class="row-fluid">
 								<div class="span6">
-									<a class="btn btn-primary btn-dash" href="#">
-										<div>LEAP Portal</div>
-									</a>
+										<div>
+										<%= link_to 'LEAP Portal',
+										 	leap_path,
+										 	:class=> 'btn btn-primary btn-dash' %>
+										</div>
 								</div>
 								<div class="span6">
 								</div>

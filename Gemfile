@@ -40,6 +40,9 @@ group :assets do
   # More gem problems with the new stylesheets
   gem 'bootstrap-sass'
 
+  # Getting the benefits of the jquery ui library.
+  gem 'jquery-ui-rails'
+
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 

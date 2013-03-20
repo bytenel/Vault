@@ -38479,3 +38479,629 @@ Served asset /osudlogo.gif - 304 Not Modified (0ms)
 
 Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-18 07:45:03 -0600
 Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Processing by DocumentsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered documents/_sections.html.erb (0.1ms)
+  Rendered documents/_form.html.erb (8.3ms)
+  Rendered documents/new.html.erb within layouts/documents (12.1ms)
+  Rendered application/_navbar.html.erb (3.2ms)
+  Rendered application/_footer.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /base.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /styles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-18 07:48:25 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2013-03-18 07:48:26 -0600
+Processing by DocumentsController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" [0m
+  Rendered documents/index.html.erb within layouts/documents (1.8ms)
+  Rendered application/_navbar.html.erb (3.5ms)
+  Rendered application/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /application.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /base.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /styles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /jquery.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-18 07:48:27 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Processing by ApplicationController#help as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered application/help.html.erb within layouts/application (2.7ms)
+  Rendered application/_navbar.html.erb (3.3ms)
+  Rendered application/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /base.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /styles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-18 07:48:29 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Processing by ApplicationController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" 
+  Rendered application/_recent_activity.html.erb (1.2ms)
+  Rendered application/index.html.erb within layouts/application (4.4ms)
+  Rendered application/_navbar.html.erb (3.5ms)
+  Rendered application/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /base.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /styles.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-18 07:48:31 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:15:40 -0600
+Processing by ApplicationController#index as HTML
+Completed 401 Unauthorized in 73ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-19 22:15:41 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (40.9ms)
+  Rendered application/_footer.html.erb (1.2ms)
+Completed 200 OK in 2278ms (Views: 1562.8ms | ActiveRecord: 462.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /application.css - 200 OK (102ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /documents.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /bootstrap.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /base.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /styles.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /jquery.js - 200 OK (32ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:43 -0600
+Served asset /documents.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:44 -0600
+Served asset /application.js - 200 OK (13ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:44 -0600
+Served asset /bootstrap.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:44 -0600
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-19 22:15:44 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (32ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-19 22:15:57 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvKReh29CFCB/IPfGV1g0iyjnjrt7UZtKU0LWawI6XI=", "user"=>{"email"=>"ben@vaultrms.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "button"=>""}
+  [1m[36mUser Load (43.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ben@vaultrms.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (17.4ms)[0m  [1mUPDATE "users" SET "remember_created_at" = '2013-03-20 04:15:58.299566', "updated_at" = '2013-03-20 04:15:58.304599' WHERE "users"."id" = 2[0m
+  [1m[35m (86.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-18 13:15:33.533718', "current_sign_in_at" = '2013-03-20 04:15:58.457873', "sign_in_count" = 5, "updated_at" = '2013-03-20 04:15:58.461809' WHERE "users"."id" = 2
+  [1m[36m (10.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1014ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Processing by ApplicationController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mDocument Load (37.9ms)[0m  [1mSELECT "documents".* FROM "documents" ORDER BY id DESC LIMIT 10[0m
+  [1m[35mDocument Load (0.9ms)[0m  SELECT "documents".* FROM "documents" 
+  Rendered application/_recent_activity.html.erb (6.5ms)
+  Rendered application/index.html.erb within layouts/application (12.0ms)
+  Rendered application/_navbar.html.erb (8.8ms)
+  Rendered application/_footer.html.erb (0.4ms)
+Completed 200 OK in 177ms (Views: 73.2ms | ActiveRecord: 50.7ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /base.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /styles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /osudlogo.gif - 304 Not Modified (12ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-19 22:15:58 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Processing by ApplicationController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" 
+  Rendered application/_recent_activity.html.erb (1.8ms)
+  Rendered application/index.html.erb within layouts/application (4.0ms)
+  Rendered application/_navbar.html.erb (3.9ms)
+  Rendered application/_footer.html.erb (0.3ms)
+Completed 200 OK in 104ms (Views: 98.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /application.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /base.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /styles.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-19 22:16:49 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Processing by ApplicationController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" 
+  Rendered application/_recent_activity.html.erb (2.2ms)
+  Rendered application/index.html.erb within layouts/application (4.6ms)
+  Rendered application/_navbar.html.erb (4.0ms)
+  Rendered application/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /base.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /styles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-19 22:17:06 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/documents/1" for 127.0.0.1 at 2013-03-19 22:17:08 -0600
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mDocument Load (2.1ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered documents/show.html.erb within layouts/documents (5.1ms)
+  Rendered application/_navbar.html.erb (3.9ms)
+  Rendered application/_footer.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 74.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /application.css - 304 Not Modified (111ms)
+
+
+Started GET "/assets/documents.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /documents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /base.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documents.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /documents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /styles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/osudlogo.gif" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /osudlogo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/VaultRmsLogo.png" for 127.0.0.1 at 2013-03-19 22:17:09 -0600
+Served asset /VaultRmsLogo.png - 304 Not Modified (0ms)
